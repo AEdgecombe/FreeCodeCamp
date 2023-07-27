@@ -1,0 +1,71 @@
+/* Modern look and theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333; /* Text color for light mode */
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a modern look */
+    z-index: 1; /* Ensure the header stays above other content */
+  }
+  
+  #header-img {
+    height: 50px;
+  }
+  
+  #nav-bar {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333; /* Link color for light mode */
+  }
+  
+  /* Light mode */
+  #features {
+    background-color: #fff;
+  }
+  
+  #features > div {
+    padding: 40px;
+    border-bottom: 1px solid #ddd; /* Add a divider between sections */
+  }
+  
+  #video-section {
+    margin-top: 100px;
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+    }
+  
+    .nav-link {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    #features > div {
+      padding: 20px;
+    }
+  
+    #video-section {
+      padding: 20px;
+    }
+  }
+  
